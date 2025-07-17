@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('ingreso')">INGRESO</button>
+      <app-ingreso *ngIf="mostrarIngreso"></app-ingreso>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('registro')">REGISTRO</button>
+      <app-registro *ngIf="mostrarRegistro"></app-registro>
+    </li>
+  </ul>
+</nav>

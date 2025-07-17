@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('pegamentos')">PEGAMENTOS</button>
+      <app-pegamentos *ngIf="mostrarPegamentos"></app-pegamentos>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('aceites')">ACEITES</button>
+      <app-aceites *ngIf="mostrarAceites"></app-aceites>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('lijas')">LIJAS</button>
+      <app-lijas *ngIf="mostrarLijas"></app-lijas>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('clavos')">CLAVOS Y TORNILLOS</button>
+      <app-clavos *ngIf="mostrarClavos"></app-clavos>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('libreria')">LIBRERÍA</button>
+      <app-libreria *ngIf="mostrarLibreria"></app-libreria>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('quienes')">¿QUÉNES SOMOS?</button>
+      <app-presentacion *ngIf="mostrarPresentacion"></app-presentacion>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('redes')">REDES SOCIALES</button>
+      <app-redes *ngIf="mostrarRedes"></app-redes>
+    </li>
+  </ul>
+</nav>

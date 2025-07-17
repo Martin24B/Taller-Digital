@@ -1,0 +1,33 @@
+<nav>
+    <ul>
+        <li>
+            <button (click)="mostrarMenu('herramientas')">HERRAMIENTAS</button>
+            <app-herramientas *ngIf="mostrarHerramientas"></app-herramientas>
+        </li>
+
+        <li>
+            <button (click)="mostrarMenu('mediciones')">MEDICIÓN Y NIVELACIÓN</button>
+            <app-medicion *ngIf="mostrarMedicciones"></app-medicion>
+        </li>
+
+        <li>
+            <button (click)="mostrarMenu('protecciones')">SEGURIDAD Y PROTECCIÓN</button>
+            <app-proteccion *ngIf="mostrarProtecciones"></app-proteccion>
+        </li>
+
+        <li>
+            <button (click)="mostrarMenu('suministros')">SUMINISTROS</button>
+            <app-suministros *ngIf="mostrarSuministros"></app-suministros>
+        </li>
+
+        <li>
+            <button (click)="mostrarMenu('usuarios')">USUARIO</button>
+            <app-usuario *ngIf="mostrarUsuarios"></app-usuario>
+        </li>
+
+        <li>
+            <button (click)="mostrarMenu('contactos')">CONTACTO</button>
+            <app-contacto *ngIf="mostrarContactos"></app-contacto>
+        </li>
+    </ul>
+</nav>

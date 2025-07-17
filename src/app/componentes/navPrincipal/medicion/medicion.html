@@ -1,0 +1,28 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('niveles')">NIVELES</button>
+      <app-niveles *ngIf="mostrarNiveles"></app-niveles>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('cintas')">CINTAS MÉTRICAS</button>
+      <app-cintas-metricas *ngIf="mostrarCintas"></app-cintas-metricas>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('distancia')">MEDIDORES DE DISTANCIA</button>
+      <app-medidores-distancia *ngIf="mostrarDistancia"></app-medidores-distancia>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('calibradores')">CALIBRADORES Y GRAMILES</button>
+      <app-calibradores *ngIf="mostrarCalibradores"></app-calibradores>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('transportadores')">TRANSPORTADORES Y COMPASES</button>
+      <app-transportadores *ngIf="mostrarTransportadores"></app-transportadores>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('reglas')">REGLAS Y ESCUADRAS</button>
+      <app-reglas *ngIf="mostrarReglas"></app-reglas>
+    </li>
+  </ul>
+</nav>

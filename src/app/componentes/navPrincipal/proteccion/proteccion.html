@@ -1,0 +1,28 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('botas')">BOTAS</button>
+      <app-botas *ngIf="mostrarBotas"></app-botas>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('ropa')">ROPA</button>
+      <app-ropa *ngIf="mostrarRopa"></app-ropa>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('guantes')">GUANTES</button>
+      <app-guantes *ngIf="mostrarGuantes"></app-guantes>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('gafas')">GAFAS</button>
+      <app-gafas *ngIf="mostrarGafas"></app-gafas>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('mascaras')">MASCARAS</button>
+      <app-mascaras *ngIf="mostrarMascaras"></app-mascaras>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('cascos')">CASCOS</button>
+      <app-cascos *ngIf="mostrarCascos"></app-cascos>
+    </li>
+  </ul>
+</nav>

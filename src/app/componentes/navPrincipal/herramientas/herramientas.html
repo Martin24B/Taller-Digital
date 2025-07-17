@@ -1,0 +1,16 @@
+<nav>
+  <ul>
+    <li>
+      <button (click)="mostrarMenu('manuales')">MANUALES</button>
+      <app-herramientas-manuales *ngIf="mostrarHerramientasManuales"></app-herramientas-manuales>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('electricas')">ELÉCTRICAS</button>
+      <app-herramientas-electricas *ngIf="mostrarHerramientasElectricas"></app-herramientas-electricas>
+    </li>
+    <li>
+      <button (click)="mostrarMenu('industriales')">INDUSTRIALES</button>
+      <app-herramientas-industriales *ngIf="mostrarHerramientasIndustriales"></app-herramientas-industriales>
+    </li>
+  </ul>
+</nav>
