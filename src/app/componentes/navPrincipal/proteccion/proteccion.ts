@@ -5,11 +5,12 @@ import { Guantes } from '../guantes/guantes';
 import { Gafas } from '../gafas/gafas';
 import { Mascaras } from '../mascaras/mascaras';
 import { Cascos } from '../cascos/cascos';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-proteccion',
   standalone: true,
-  imports: [Botas,Ropa,Guantes,Gafas,Mascaras,Cascos,],
+  imports: [CommonModule, Botas,Ropa,Guantes,Gafas,Mascaras,Cascos,],
   templateUrl: './proteccion.html',
   styleUrls: ['./proteccion.css'],
 })

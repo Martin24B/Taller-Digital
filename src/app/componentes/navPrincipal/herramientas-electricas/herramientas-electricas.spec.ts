@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HerramientasElectricas } from './herramientas-electricas';
+import { HerramientasElectricas } from './herramientas-electricas.component';
 
 describe('HerramientasElectricas', () => {
   let component: HerramientasElectricas;
@@ -8,9 +8,8 @@ describe('HerramientasElectricas', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HerramientasElectricas]
-    })
-    .compileComponents();
+      imports: [HerramientasElectricas],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HerramientasElectricas);
     component = fixture.componentInstance;

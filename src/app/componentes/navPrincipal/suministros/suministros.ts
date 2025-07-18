@@ -4,11 +4,12 @@ import { Aceites } from '../aceites/aceites';
 import { Lijas } from '../lijas/lijas';
 import { Clavos } from '../clavos/clavos';
 import { Libreria } from '../libreria/libreria';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-suministros',
   standalone: true,
-  imports: [Pegamentos,Aceites,Lijas,Clavos,Libreria],
+  imports: [CommonModule, Pegamentos,Aceites,Lijas,Clavos,Libreria],
   templateUrl: './suministros.html',
   styleUrls: ['./suministros.css'],
 })

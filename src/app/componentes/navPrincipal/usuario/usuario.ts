@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Ingreso } from '../ingreso/ingreso';
 import { Registro } from '../registro/registro';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-usuario',
   standalone: true,
-  imports: [Ingreso, Registro],
+  imports: [CommonModule, Ingreso, Registro],
   templateUrl: './usuario.html',
   styleUrls: ['./usuario.css'],
 })

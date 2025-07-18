@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Herramientas } from './herramientas';
+import { Herramientas } from './herramientas.component';
 
 describe('Herramientas', () => {
   let component: Herramientas;
@@ -8,9 +8,8 @@ describe('Herramientas', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Herramientas]
-    })
-    .compileComponents();
+      imports: [Herramientas],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Herramientas);
     component = fixture.componentInstance;

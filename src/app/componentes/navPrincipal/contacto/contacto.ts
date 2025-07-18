@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Presentacion } from '../presentacion/presentacion';
 import { Redes } from '../redes/redes';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [Presentacion, Redes],
+  imports: [CommonModule, Presentacion, Redes],
   templateUrl: './contacto.html',
   styleUrls: ['./contacto.css'],
 })

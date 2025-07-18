@@ -5,11 +5,12 @@ import { MedidoresDistancia } from '../medidores-distancia/medidores-distancia';
 import { Calibradores } from '../calibradores/calibradores';
 import { Transportadores } from '../transportadores/transportadores';
 import { Reglas } from '../reglas/reglas';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-medicion',
   standalone: true,
-  imports: [Niveles,CintasMetricas,MedidoresDistancia,Calibradores,Transportadores,Reglas,],
+  imports: [CommonModule, Niveles,CintasMetricas,MedidoresDistancia,Calibradores,Transportadores,Reglas,],
   templateUrl: './medicion.html',
   styleUrls: ['./medicion.css'],
 })
